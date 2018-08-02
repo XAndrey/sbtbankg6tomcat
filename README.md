@@ -14,6 +14,7 @@ https://www.build-business-websites.co.uk/install-tomcat-9-on-ubuntu-16-04/
 Для доступа к web-manager'у из вне (не с локального компа, а с другого IP) нужно добавить его в файл apache-tomcat-9.0.10/webapps/manager/META-INF/context.xml
 
 3) Установка БД PosgreSQL
+Изменение настроек в конфиг файлах как правило требует перезапуск сервера: sudo service postgresql restart
 
 4) Развёртывание war файла из п.1 на сервере Tomcat: http://localhost:8080/manager/text/deploy?path=/footoo&war=file:/path/to/foo
 При этом для Tomcat нужно настройить пользователя с ролями: в файле tomcat-users.xml нужно добавить:
